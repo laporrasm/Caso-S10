@@ -4,11 +4,15 @@ Crear una funcion que retorne la suma de dos números.
 
 let sum = (a, b) => a + b;
 
+console.log(sum(30, 20));
+
 /* (2)
 Crear una funcion que retorne la potencia de un número dado, esta función deberá recibir la potencia y el número a potenciar.
 */
 
 let power = (base, exp) => Math.pow(base, exp);
+
+console.log(power(3, 2));
 
 /* (3)
 Cree una función que tome números y devuelva la suma de sus cubos.
@@ -24,12 +28,16 @@ let sumOfCubes = function() {
 	return sum;
 }
 
+console.log(sumOfCubes(1, 5, 9));
+
 /* (4)
 Escribe una función que tome la base y la altura de un triángulo y devuelva su área.
 triArea(3, 2) ➞ 3
 */
 
 let triArea = (base, height) => base * height / 2;
+
+console.log(triArea(3, 2));
 
 /* (5)
 Crear una función llamada calculator que recibe 3 parametros, dos numeros y una operación matematica(+,-,/,x,%), y si la operacion no es correcta que envie un mensaje “El parámetro no es reconocido”.
@@ -52,3 +60,5 @@ let calculator = (n1, n2, op) => {
 			return "El parámetro no es reconocido.";
 	}
 };
+
+console.log(calculator(6, 7, "+"));
